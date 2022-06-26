@@ -126,14 +126,7 @@
 
                 pointToLayer: function(feature, latlng) { 
                     switch (feature.properties.category) {
-                                case '서닷잉-운영': return L.marker(latlng, {icon: castleIcon}).addTo(part_1);
-                                case '서닷잉-폐점': return L.marker(latlng, {icon: castleIcon}).addTo(part_2);
                                 case '맛있조-한식': return L.marker(latlng, {icon: buildingIcon}).addTo(part_3);
-                                case '맛있조-중식': return L.marker(latlng, {icon: mountainroadIcon}).addTo(part_4);
-                                case '맛있조-일식': return L.marker(latlng, {icon: villageIcon}).addTo(part_5);
-                                case '죽생사-다리': return L.marker(latlng, {icon: villageIcon}).addTo(part_6);
-                                case '샘플-유원지': return L.marker(latlng, {icon: horseIcon}).addTo(part_7);
-                                case '샘플-초등학교': return L.marker(latlng, {icon: villageIcon}).addTo(part_8);
                         }
                     }
                 });
