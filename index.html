@@ -79,22 +79,8 @@
                 };
       
             var part_1 = L.layerGroup();
-            var part_2 = L.layerGroup();
-            var part_3 = L.layerGroup();  
-            var part_4 = L.layerGroup();  
-            var part_5 = L.layerGroup();  
-            var part_6 = L.layerGroup();  
-            var part_7 = L.layerGroup();
-            var part_8 = L.layerGroup();    
 
             map.addLayer(part_1)
-            map.addLayer(part_2)
-            map.addLayer(part_3)
-            map.addLayer(part_4)
-            map.addLayer(part_5)
-            map.addLayer(part_6)
-            map.addLayer(part_7)
-            map.addLayer(part_8)
 
             var overlays = {
                 "맛있조-한식(평양냉면)": part_1,
@@ -124,27 +110,6 @@
                     }
                 });
     
-                var latlngs1 = [[37.5424, 127.1157], [37.5407, 127.1143], [37.5401, 127.116], [37.5422, 127.1174]];
-                var latlngs2 = [[37.55821, 126.93998], [37.5581, 126.94], [37.55832, 126.94054], [37.55841, 126.94011]];
-                var latlngs3 = [[37.50464, 126.99574], [37.50388, 126.99629], [37.50427, 126.9977], [37.50523, 126.99701]];
-                var latlngs4 = [[37.49292, 127.0874], [37.49225, 127.08768], [37.49252, 127.08859], [37.49319, 127.08826]];
-
-                var polygon = L.polygon(latlngs1, {color: "blue", weight:15, opacity:0.7}).addTo(part_7);
-                var polygon = L.polygon(latlngs2, {color: "red", weight:15, opacity:0.7}).addTo(part_7); 
-                var polygon = L.polygon(latlngs3, {color: "black", weight:15, opacity:0.7}).addTo(part_8); 
-                var polygon = L.polygon(latlngs4, {color: "green", weight:15, opacity:0.7}).addTo(part_8); 
-
-                var linelatlngs1 = [[37.6034, 126.81469], [37.5928, 126.80486]];
-                var linelatlngs2 = [[37.59194, 126.83095], [37.58453, 126.82147]];
-                var linelatlngs3 = [[37.57619, 126.86636], [37.5622, 126.85589]];
-                var linelatlngs4 = [[37.55805, 126.89468], [37.54632, 126.88772]];
-                var linelatlngs5 = [[37.54744, 126.90923], [37.53733, 126.89898]];
-
-                var polyline = L.polyline(linelatlngs1, {color: 'blue', weight:7, opacity:1.0}).addTo(part_6);
-                var polyline = L.polyline(linelatlngs2, {color: 'red', weight:7, opacity:1.0}).addTo(part_6);
-                var polyline = L.polyline(linelatlngs3, {color: 'green', weight:7, opacity:1.0}).addTo(part_6);
-                var polyline = L.polyline(linelatlngs4, {color: 'purple', weight:7, opacity:1.0}).addTo(part_6);
-                var polyline = L.polyline(linelatlngs5, {color: 'blue', weight:7, opacity:1.0}).addTo(part_6);
 
 	    </script> 
     </body>
