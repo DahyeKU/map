@@ -97,14 +97,7 @@
             map.addLayer(part_8)
 
             var overlays = {
-                "서닷잉-운영": part_1,
-                "서닷잉-폐점": part_2,
-                "맛있조-한식": part_3,
-                "맛있조-중식": part_4,
-                "맛있조-일식": part_5,
-                "죽생사-다리": part_6,
-                "샘플-유원지": part_7,
-                "샘플-초등학교": part_8
+                "맛있조-한식(평양냉면)": part_1,
             };
 
             var ctr_mapLayers = L.control.layers(null, overlays, {collapsed:false, position:'bottomleft'}).addTo(map);
@@ -126,7 +119,7 @@
 
                 pointToLayer: function(feature, latlng) { 
                     switch (feature.properties.category) {
-                                case '맛있조-한식': return L.marker(latlng, {icon: buildingIcon}).addTo(part_3);
+                                case '맛있조-한식(평양냉면)': return L.marker(latlng, {icon: buildingIcon}).addTo(part_3);
                         }
                     }
                 });
